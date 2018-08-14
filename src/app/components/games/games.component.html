@@ -1,0 +1,18 @@
+<div class="main-container">
+  <div class="game-cont" *ngFor="let game of games" (click)="toggleOnMobile($event)">
+    <div class="game-img">
+      <img [src]="game.image" alt="">
+    </div>
+    <div class="game-info">
+      <h2>{{game.name}}</h2>
+      <div class="info-cont">
+        <li><strong>Oyun Hakkında:</strong>
+          <span>{{game.description}}</span> </li>
+        <li><strong>Yayıncı Kuruluş</strong>
+          <span>{{game.publisher}}</span> </li>
+        <li><strong>Oyun Türü:</strong>
+          <span>{{game.type}}</span> </li>
+      </div>
+    </div>
+  </div>  
+</div>

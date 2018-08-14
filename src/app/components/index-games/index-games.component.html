@@ -1,0 +1,11 @@
+
+<div class="gallery-container">
+    <div class="gallery cf">
+      <a href="#" *ngFor="let game of allGames | slice:0:6">
+        <div>
+          <img [src]="game.image" />
+          <div class="name">{{game.name}}</div>
+        </div>
+      </a>
+    </div>
+  </div>

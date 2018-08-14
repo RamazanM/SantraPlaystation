@@ -1,0 +1,87 @@
+.main-container{
+    background: url('../../../assets/img/background.jpg');
+}
+.game-cont{
+    width: 100%;
+    height: auto;
+    background-color: none;
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  
+  }
+  .game-img{
+    width:80%;
+    /* height:60%; */
+    margin: 10px;
+  }
+  .game-img:hover{
+    cursor:pointer;
+  }
+  .game-img>img{
+    width: 100%;
+    height: 250px;
+  }
+  
+  .game-info{
+    width:100%;
+    background-color:none;
+    height:auto;
+    font-family: 'Poiret One', cursive;
+    color:#fff;
+    font-size:12px;
+    display:none;
+    text-align:stretch;
+  }
+  
+  .game-info>h2{
+    text-align:center;
+  
+  }
+  .game-info>p{
+    margin:0;
+  }
+  .info-cont{
+    display:flex;
+    flex-direction:column;
+    padding-left:12px;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+  }
+  .info-cont>li{
+    list-style-type:none;
+    text-align: center;
+  }
+  .info-cont>li:last-child{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @media screen and (min-width:768px) {
+    .game-cont {
+        width: 100%;
+        height: auto;
+        background-color: none;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      .game-cont:nth-child(2n) {
+        flex-direction: row;
+      }
+      .game-info {
+        width: 50%;
+        font-size: 14px;
+        display: block !important;
+      }
+      .game-img {
+        width: 50%;
+        /* height: 100%; */
+        justify-content: flex-end;
+      }
+}

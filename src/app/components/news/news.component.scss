@@ -1,0 +1,241 @@
+$background:url(../../../assets/img/background.jpg);
+
+.haber-cont {
+    width: 100%;
+    height: auto;
+    background:$background;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.haber-colon {
+    width: 100%;
+    /*background-color: #F6F6F6;*/
+    height: auto;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.haber-colon>a {
+    text-decoration: none;
+}
+
+.colon-icerik {
+    background-color: #DBDBDB;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.colon-icerik:hover {
+    cursor: pointer;
+}
+
+.colon-icerik>h1 {
+    width: 100%;
+    height: auto;
+    background-color: #510000;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+    margin: 0 0 10px 0;
+    padding-left: 10px;
+}
+
+.colon-icerik>img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 5px;
+}
+
+.haber-bilgi {
+    width: 75%;
+}
+
+.haber-bilgi>p {
+    margin: 0;
+    font-size: 12px;
+    margin: 5px 0 5px 5px;
+    font-family: 'Nunito', sans-serif;
+    color: #212121;
+}
+
+.haber-bilgi:nth-child(2n) {
+    width: 100%;
+    display: none;
+}
+
+.colon-button {
+    width: 100%;
+    height: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.goruntuleme {
+    width: 100px;
+    height: 100%;
+    background-color: #212121;
+    color: #F5F5F5;
+    font-size: 8px;
+    text-align: center;
+    margin-left: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.devambutton {
+    width: 80px;
+    height: 27px;
+    background-color: #212121;
+    color: #F5F5F5;
+    font-size: 11px;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.kapatbutton {
+    width: 50px;
+    height: 100%;
+    ;
+    font-weight: bold;
+    background-color: #212121;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    display: none;
+    margin-right: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.haber-icerik {
+    width: 60%;
+    height: 360px;
+    background-color: #E4E4E4;
+    box-shadow: 0px 1px 10px #212121;
+    display: none;
+    margin-top: 15px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media screen and (min-width:768px) {
+    .haber-colon {
+        width: 35%;
+        height: 360px;
+        overflow-y: scroll;
+    }
+    .colon-icerik {
+        height: auto;
+    }
+    .colon-icerik>h1 {
+        font-size: 21px;
+    }
+    .colon-icerik>img {
+        width: 55px;
+        height: 55px;
+    }
+    .haber-bilgi>p {
+        font-size: 12px;
+    }
+    .devambutton,
+    .kapatbutton {
+        display: none;
+    }
+    .haber-icerik {
+        display: block;
+    }
+    .genis-icerik {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+        height: 92%;
+    }
+    .genis-icerik>h1 {
+        width: 100%;
+        background-color: #DF2935;
+        color: #fff;
+        font-family: 'Poiret One', cursive;
+        margin: 0 0 10px 0;
+        padding-left: 10px
+    }
+    .genis-icerik>img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5px;
+    }
+    .genis-bilgi {
+        width: 75%;
+        height: 80%;
+    }
+    .genis-bilgi>p {
+        margin: 0;
+        font-size: 14px;
+        margin: 5px 0 5px 5px;
+        font-family: 'Nunito', sans-serif;
+        color: #212121;
+    }
+    .icerik-button {
+        width: 100%;
+        height: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+    .goruntuleme {
+        width: 100px;
+        height: 100%;
+        background-color: #212121;
+        color: #F5F5F5;
+        font-size: 8px;
+        text-align: center;
+        margin-left: 5px;
+        font-family: 'Nunito', sans-serif;
+    }
+}
+@media screen and (min-width:992px) {
+    .haber-cont{
+        height: 600px;
+        padding-bottom: 25px;
+      }
+      .haber-colon {
+        width: 30%;
+        height: 100%;
+    
+      }
+      .haber-icerik{
+        width: 49%;
+        height: 380px;
+      }
+}

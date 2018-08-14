@@ -1,0 +1,604 @@
+.banner {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    color: #b71c1c;
+    align-content: space-around;
+    align-self: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 200;
+    font-family: 'Audiowide', cursive;
+    background-color: #201E1E;
+  
+  }
+  .banner>a{
+    text-decoration: none;
+    color: #b71c1c;
+  }
+  
+  .banner_left {
+    /*SANTRA*/
+    font-size: 20px;
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-top: 5px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:linear;
+  
+  }
+  @keyframes example {
+      from {  -webkit-text-stroke-color: none;
+       -webkit-text-stroke-width:0;}
+      to {  -webkit-text-stroke-color: #f44336;
+       -webkit-text-stroke-width: 2.00px;}
+  }
+  
+  .motto {
+    /*SLOGAN*/
+    font-size: 15px;
+    flex-grow: 1;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    order: 4;
+    padding-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function:linear;
+  }
+  
+  .menubar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    z-index: 20;
+    background-color: #201e1e;
+
+  }
+  
+  .menuac {
+    color: #fff;
+    width: 36px;
+    height: 34px;
+    font-size: 20px;
+    padding: 5px;
+    z-index: 333;
+  }
+  
+  .menuac:hover {
+    cursor: pointer;
+  }
+  
+  .menu {
+    width: 100%;
+    display: none;
+    z-index: 50;
+    margin-top: -38px;
+  }
+  
+  .mobilemenu {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #757575;
+    background-color: #0072ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /*font-family: 'Poiret One', cursive;*/
+    letter-spacing: 3px;
+    z-index: 1000;
+      font-family: 'Audiowide', cursive;
+  }
+  
+  .mobilemenu>a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+    width: 99%;
+    text-align: center;
+    z-index: 1001;
+  }
+  
+  .mobilemenu:hover {
+    cursor: pointer;
+    background-color: #201E1E;
+  }
+  @media screen and (max-width:320px) {
+    .banner_left {
+      font-size: 18px;
+    }
+    .mobilemenu {
+      font-size: 23px;
+    }
+    .konu>h2 {
+      font-size: 20px;
+    }
+    .konu>p {
+      font-size: 10px;
+    }
+  
+  }
+  @media screen and (min-width:498px) {
+    /*XL MOBİLE*/
+    .banner_left {
+      font-size: 28px;
+      flex-grow: 1;
+    }
+    .motto {
+      font-size: 20px;
+  
+    }
+    .mobilemenu {
+      font-size: 26px;
+      letter-spacing: 4px;
+    }
+    .haber>img {
+      width: 110px;
+      height: 100px;
+    }
+    .konu>h2 {
+      font-size: 23px;
+    }
+    .haber>a {
+      width: 80%;
+    }
+    .konu>p {
+      font-size: 13px;
+    }
+    .gallery {
+      width: 86%;
+      padding-left: 4%;
+    }
+    .gallery>a>div {
+      width: 43%;
+      height: 115px;
+      padding: 7px;
+    }
+    .secim {
+      height: 15%;
+    }
+    .maps {
+      width: 80%;
+      height: 83%;
+    }
+    .footer-baslik {
+      font-size: 27px;
+    }
+    .adresicerik {
+      font-size: 23px;
+    }
+    .game-img {
+      width: 85%;
+      height: 65%;
+    }
+    .game-img>img {
+      height: 300px;
+    }
+    .game-info>h2 {
+      font-size: 18px;
+    }
+    .game-info {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width:768px) {
+    /*TABLET*/
+    .banner_left {
+      font-size: 27px;
+      letter-spacing: 7px;
+      flex-grow: 1;
+    }
+    .motto {
+      font-size: 20px;
+      flex-grow: 2;
+    }
+    .konu>h2 {
+      font-size: 23px;
+    }
+    .haber>a {
+      width: 85%;
+    }
+    .konu>p {
+      font-size: 16px;
+    }
+    .gallery {
+      width: 94%;
+      padding-left: 4%;
+    }
+    .gallery>a>div {
+      width: 29%;
+      height: 140px;
+      padding: 7px;
+    }
+    .maps-cont {
+      width: 48%;
+      height: 250px;
+      border-right: 1px solid #424242;
+    }
+    .maps {
+      width: 80%;
+      height: 83%;
+    }
+    .adres {
+      width: 48%;
+      height: 250px;
+    }
+    .footer-baslik {
+      font-size: 25px;
+    }
+    .adresicerik {
+      font-size: 21px;
+      border-bottom: none;
+    }
+    .game-cont {
+      width: 100%;
+      height: auto;
+      background-color: none;
+      margin-top: 68px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    .game-cont:nth-child(2n) {
+      flex-direction: row;
+    }
+    .game-info {
+      width: 50%;
+      font-size: 14px;
+      display: block !important;
+    }
+    .game-img {
+      width: 50%;
+      height: 100%;
+      justify-content: flex-end;
+    }
+    .haber-colon {
+      width: 35%;
+      height: 360px;
+      overflow-y: scroll;
+    }
+    .colon-icerik{
+      height: auto;
+  
+    }
+    .colon-icerik>h1 {
+      font-size: 21px;
+  
+    }
+    .colon-icerik>img {
+      width: 55px;
+      height: 55px;
+    }
+    .haber-bilgi>p {
+      font-size: 12px;
+    }
+    .devambutton, .kapatbutton {
+      display: none;
+    }
+    .haber-icerik {
+      display: block;
+    }
+    .genis-icerik {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 5px;
+      height: 92%;
+  
+    }
+    .genis-icerik>h1 {
+      width: 100%;
+      background-color: #DF2935;
+      color: #fff;
+      font-family: 'Poiret One', cursive;
+      margin: 0 0 10px 0;
+      padding-left: 10px
+    }
+    .genis-icerik>img {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 5px;
+    }
+    .genis-bilgi {
+      width: 75%;
+      height: 80%;
+    }
+    .genis-bilgi>p {
+      margin: 0;
+      font-size: 14px;
+      margin: 5px 0 5px 5px;
+      font-family: 'Nunito', sans-serif;
+      color: #212121;
+    }
+    .icerik-button {
+      width: 100%;
+      height: 13px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 5px;
+    }
+    .goruntuleme{
+      width:100px;
+      height: 100%;
+      background-color: #212121;
+      color: #F5F5F5;
+      font-size: 8px;
+      text-align: center;
+      margin-left:5px;
+      font-family: 'Nunito', sans-serif;
+    }
+    .harita>iframe {
+      height: 300px;
+    }
+    .secimler{
+      width: 50%;
+    }
+    .adresler>div {
+      font-size: 18px;
+    }
+    .contactme {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .contactme>form {
+      width: 65%;
+    ;
+    }
+  }
+  
+  @media screen and (min-width:992px) {
+    /*ORTA BOY BİLGİSAYAR*/
+  .banner{
+    padding-bottom:7px;
+  }
+      .banner_left {
+      font-size: 33px;
+      flex-grow: 1;
+      letter-spacing:18px;
+    }
+  
+    .motto {
+      font-size: 17px;
+      flex-grow: 2;
+    }
+    .menuac {
+      display: none;
+    }
+    .menubar {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;  
+    }
+    .menu {
+      width: 100%;
+      display: flex !important;
+      /* Flex durumuna geçemiyor önceliği alamıyor important şimdilik geçici çözüm olabilir*/
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+  
+    }
+    .mobilemenu {
+      border-bottom: none;
+      width: 20%;
+      font-size: 15px;
+      background-color: #0072ce;
+      z-index: 1000;
+  
+    }
+    .mobilemenu>a {
+      z-index: 1000;
+        color: #FFF;
+    }
+    .mobilemenu:hover {
+      background-color: #201E1E;
+      color: #E0E0E0;
+    }
+    .slider-cont{
+      margin-top: 117px;
+      align-items: flex-start;
+    }
+    .slider-img{
+      display: block;
+    }
+    .slider-img>img{
+      width: 100%;
+      height: 100%;
+    }
+    #slider {
+      width: 50%;
+      margin-top: 0;
+  
+    }
+    .sliderbaslik>h1{
+      margin: 10px;
+    }
+    .duyuru {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      z-index: 12;
+      justify-content: space-around;
+      background-color: #201E1E;
+      padding-bottom: 50px;
+    }
+    .duyuru>a {
+      border-bottom: none;
+      margin-left: 10px;
+    }
+    .haber {
+      width: 20%;
+      height: 75%;
+      flex-direction: column;
+      justify-content: space-around;
+      border-right: 1px solid #616161;
+      border-bottom: none;
+      margin-bottom: 20px;
+    }
+    .haber:nth-last-child(-n+2) {
+      border-right: none;
+    }
+    .haber:nth-child(2n) {
+      flex-direction: column;
+    }
+    .haber:nth-last-child(-n+3) {
+      display: flex;
+      flex-direction: column;
+    }
+    .haber>img {
+      width: 100px;
+      height: 90px;
+    }
+    .konu>h2 {
+      font-size: 21px;
+    }
+    .haber>a {
+      width: 85%;
+    }
+    .konu>p {
+      font-size: 14px;
+    }
+    .buttoncont {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:10px;
+    }
+    .buttoncont>a {
+      text-decoration: none;
+      width: 25%;
+      height: 95%;
+      border: 1px solid #616161;
+    }
+    .gallery {
+      width: 91%;
+      padding-left: 8%;
+    }
+    .gallery>a>div {
+      width: 28%;
+      height: 270px;
+      padding: 7px;
+    }
+    .gallery>a>div>.name {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .gallery>a>div:hover>img {
+      /*transform: scale(1.1, 1.1);
+      transition: .4s transform;*/
+      opacity: 1;
+    }
+    .gallery>a>div:hover>.name {
+      /*transform: scale(1.1, 1.1);
+      transition: .4s transform;*/
+      opacity: 1;
+    }
+    .game-cont {
+      margin-top: 119px;
+    }
+    .game-info {
+      width: 50%;
+      font-size: 16px;
+      display: block !important;
+      text-align: left;
+    }
+    .game-info>h2 {
+      font-size: 22px;
+    }
+    .game-img {
+      width: 40%;
+    }
+    .game-img>img {
+      width: 100%;
+      height: 340px;
+    }
+    .info-cont>li:last-child {
+      font-size: 22px;
+    }
+    .haber-cont{
+      margin-top: 118px;
+      height: 600px;
+      padding-bottom: 25px;
+    }
+    .haber-colon {
+      width: 30%;
+      height: 100%;
+  
+    }
+    .haber-icerik{
+      width: 49%;
+      height: 380px;
+    }
+    .iletisim-cont {
+      flex-direction: row;
+      margin-top: 121px;
+      flex-wrap: wrap;
+    }
+    .hakkimizda {
+      width: 46%;
+      border-bottom: none;
+      border-right: 1px solid #9E9E9E;
+    }
+    .ilemaps-cont{
+      width: 47%;
+    margin-left: 35px;
+  
+    }
+    .harita>iframe {
+      width: 100%;
+    }
+    .bizeulasin {
+      width: 45%;
+    }
+  .iletisim-sos{
+    flex-direction: column;
+      width: 5%;
+      height: 350px;
+      margin-top: 20px;
+      margin-right: 42px;
+      background-color: #0b0b0b;
+  }
+  .harita{
+    height: auto;
+  }
+  .contactme {
+    width: 45%;
+    border-top:none;
+  
+  }
+  
+  .contactme>form {
+    width: 100%;
+  
+  }
+  
+  }
+    

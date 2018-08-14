@@ -1,0 +1,304 @@
+.iletisim-cont {
+    width: 100%;
+    height: auto;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hakkimizda {
+    width: 100%;
+    height: auto;
+    background-color: #212121;
+    border-bottom: 1px solid #9E9E9E;
+}
+
+.hakkimizda>h1 {
+    text-align: center;
+    color: #9E9E9E;
+    font-family: 'Poiret One', cursive;
+}
+
+.hakkimizda>p {
+    font-family: 'Poiret One', cursive;
+    text-align: justify;
+    color: #9E9E9E;
+    margin: 10px;
+}
+
+.ilemaps-cont {
+    width: 99%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secimler {
+    width: 99%;
+    height: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.secimler>a {
+    text-decoration: none;
+}
+
+.secimbutton {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    border-bottom: 1px solid #424242;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.secimbutton2 {
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.secimbutton:hover,
+.secimbutton2:hover {
+    cursor: pointer;
+}
+
+.harita {
+    width: 99%;
+    height: 80%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.harita>iframe {
+    width: 95%;
+    height: 100%;
+    margin: 5px;
+}
+
+.bizeulasin {
+    width: 100%;
+    height: auto;
+    color: #9E9E9E;
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adresler {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.adresler>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.bizeulasin>a {
+    text-decoration: none;
+    color: #9E9E9E;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 10px;
+    font-style: 18px;
+}
+
+.iletisim-sos {
+    color: #9E9E9E !important;
+}
+
+.contactme {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #9e9e9e;
+    margin-top: 20px;
+}
+
+.contactme>form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactme>form>label {
+    color: #9E9E9E;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 10px;
+    font-style: 21px;
+    width: 25%;
+    margin-left: 10px;
+}
+
+.contactme>form>input {
+    width: 90%;
+    height: 25px;
+    background-color: #000;
+    border: none;
+    color: #9e9e9e;
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.contactme>form>textarea {
+    width: 90%;
+    height: 45px;
+    background-color: #000;
+    border: none;
+    color: #9e9e9e;
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.contactme>form>button {
+    width: 25%;
+    height: 30px;
+    color: #9e9e9e;
+    background-color: #000;
+    border: none;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.contactme>form>button:hover {
+    cursor: pointer;
+}
+
+.sosyal-cont {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .sosyal-cont>a {
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    text-align: center;
+  }
+  
+  .sosyalicon {
+    width: 100%;
+    height: 90%;
+    color: #9E9E9E;
+    text-align: center;
+    transition: .1s transform;
+    transform: translateZ(0);
+  }
+  
+  .sosyalicon:hover {
+    transform: scale(1.5, 1.5);
+    transition: .4s transform;
+  }
+  
+  .adresicerik {
+    width: 100%;
+    height: 45%;
+    font-size: 18px;
+    color: #212121;
+  font-family: 'Audiowide', cursive;
+    /*font-family: 'Poiret One', cursive;*/
+    border-bottom: 1px solid #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .adresicerik>address {
+    text-align: center;
+  }
+  
+  .copy {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1111;
+  }
+  
+  .copy>small {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+  }
+
+@media screen and (min-width:768px) {
+    .contactme {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .contactme>form {
+        width: 65%;
+      }
+}
+@media screen and (min-width:992px) {
+    .iletisim-cont {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .hakkimizda {
+        width: 46%;
+        border-bottom: none;
+        border-right: 1px solid #9E9E9E;
+      }
+      .ilemaps-cont{
+        width: 47%;
+      margin-left: 35px;
+    
+      }
+      .harita>iframe {
+        width: 100%;
+      }
+      .bizeulasin {
+        width: 45%;
+      }
+    .iletisim-sos{
+      flex-direction: column;
+        width: 5%;
+        height: 350px;
+        margin-top: 20px;
+        margin-right: 42px;
+        background-color: #0b0b0b;
+    }
+    .harita{
+      height: auto;
+    }
+    .contactme {
+      width: 45%;
+      border-top:none;
+    
+    }
+    
+    .contactme>form {
+      width: 100%;
+    
+    }
+}

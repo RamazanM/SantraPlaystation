@@ -1,0 +1,23 @@
+<div class="slider-cont">
+  <div class="slider-img">
+    <img src="{{bannerImages.left}}" alt="">
+  </div>
+
+  <div id="slider">
+    <div class="sliderbaslik">
+      <h1 id="videoBaslik">{{selectedVideo.title}}</h1>
+    </div>
+      <div class="sliderleft" (click)="prevVideo()">
+        <i class="fas fa-arrow-left fa-3x yon"></i>
+      </div>
+      <div class="sliderright" (click)="nextVideo()">
+        <i class="fas fa-arrow-right fa-3x yon"></i>
+      </div>
+      <div id="player">
+        
+      </div>
+    </div>
+    <div class="slider-img">
+      <img src="{{bannerImages.right}}" alt="">
+    </div>
+  </div>
